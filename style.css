@@ -33,7 +33,7 @@ p {
     width: 100%;
     background-color: #f2f7f8;
     justify-content: center;
-    margin-top: 60px;
+    padding-top: 60px;
 }
 
 .collapse {
