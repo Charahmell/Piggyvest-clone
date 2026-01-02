@@ -422,20 +422,44 @@ p {
     color: #003399;
 }
 
+.box0 img {
+    margin-top: -36px;
+}
+
 .box1 h5 {
     color: #3296ff;
+}
+
+.box1 img {
+    margin-top: -36px;
 }
 
 .box2 h5 {
     color: green;
 }
 
+.box2 img {
+    margin-top: -9px;
+}
+
 .box3 h5 {
     color: #e5288e;
 }
 
+.box3 img {
+    margin-top: -35px;
+}
+
+.box4 img {
+    margin-top: -7px;
+}
+
 .box5 h5 {
     color: orangered;
+}
+
+.box5 img {
+    margin-top: -6px;
 }
 
 .box:hover h5 {
@@ -1099,10 +1123,18 @@ footer {
     }
 
     .reports-button {
-        width: 310px;
-        height: 42px;
+        width: 320px;
+        height: 48px;
         font-size: 16px;
         margin-right: 10px;
+    }
+
+    .reports-button span {
+        margin-top: 12px;
+    }
+
+    .reports-button svg {
+        margin-top: 5px;
     }
 
     .main {
@@ -1160,6 +1192,34 @@ footer {
         margin-left: 20px;
     }
 
+    .flex-container img {
+        width: 170px;
+    }
+
+    .box {
+        height: 400px;
+    }
+    .box0 img {
+        margin-top: 14px;
+    }
+    .box1 img {
+        margin-top: -15px;
+    }
+    .box2 img {
+        margin-top: -25px;
+    }
+    .box3 img {
+        margin-top: 14px;
+
+    }
+    .box4 img {
+        margin-top: 36px;
+
+    }
+    .box5 img {
+        margin-top: 16px;
+
+    }
     .section4 {
         width: 100%;
     }
@@ -1253,7 +1313,7 @@ footer {
     .to-get2 button {
         font-size: 15px;
         height: 48px;
-        width: 145px;
+        width: 140px;
 
     }
 
@@ -1326,118 +1386,119 @@ footer {
     .addy1 {
         text-align: left;
     }
+}
 
-    @media (max-width: 320px) {
-        .hero {
-            margin-right: 15px;
-        }
-
-        .reports-button {
-            width: 290px;
-            height: 60px;
-            font-size: 16px;
-            margin-right: 10px;
-            border-radius: 25px;
-        }
-
-        .reports-button span {
-            width: 215px;
-            display: inline-block;
-            margin-top: 10px;
-        }
-
-        .reports-button svg {
-            margin-bottom: 14px;
-        }
-
-        .hero-1 h1 {
-            width: 94%;
-            font-size: 50px;
-        }
-
-        .box0 h5 {
-            width: 230px;
-        }
-
-        .box3 h5 {
-            width: 230px;
-        }
-
-        .box1 h5 {
-            width: 230px;
-        }
-
-        .box2 h5 {
-            width: 230px;
-        }
-
-        .box4 h5 {
-            width: 230px;
-        }
-
-        .box5 h5 {
-            width: 230px;
-        }
-
-        .texts p {
-            width: 240px;
-            font-size: 16px;
-        }
-
-        .texts h5 {
-            font-size: 30px;
-        }
-
-        .to-get2 {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            margin-left: 50px;
-        }
-
-        .mg1 {
-            width: 140px;
-            height: 38px;
-            margin-top: 10px;
-            margin-bottom: 20px;
-            margin-left: 80px;
-        }
-
-        .mg2 {
-            width: 150px;
-            height: 45px;
-            margin-top: 10px;
-            margin-left: 80px;
-            margin-bottom: 20px;
-        }
-
-        .mg3 {
-            width: 140px;
-            height: 35px;
-            margin-left: 80px;
-            margin-top: 30px;
-            margin-bottom: 20px;
-        }
-
-        .mg4 {
-            width: 140px;
-            height: 42px;
-            margin-top: 30px;
-            margin-bottom: 20px;
-            margin-left: 80px;
-        }
-
-        .mg5 {
-            width: 140px;
-            height: 98px;
-            margin-left: 80px;
-            padding-bottom: 26px;
-        }
-
-        .mg6 {
-            width: 140px;
-            height: 40px;
-            margin-top: 36px;
-            margin-left: 80px;
-        }
-
+@media (max-width: 320px) {
+    .hero {
+        margin-right: 15px;
     }
+
+    .reports-button {
+        width: 290px;
+        height: 60px;
+        font-size: 16px;
+        margin-right: 10px;
+        border-radius: 25px;
+    }
+
+    .reports-button span {
+        width: 215px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .reports-button svg {
+        margin-bottom: 40px;
+    }
+
+    .hero-1 h1 {
+        width: 94%;
+        font-size: 50px;
+    }
+
+    .box0 h5 {
+        width: 230px;
+    }
+
+    .box3 h5 {
+        width: 230px;
+    }
+
+    .box1 h5 {
+        width: 230px;
+    }
+
+    .box2 h5 {
+        width: 230px;
+    }
+
+    .box4 h5 {
+        width: 230px;
+    }
+
+    .box5 h5 {
+        width: 230px;
+    }
+
+    .texts p {
+        width: 240px;
+        font-size: 16px;
+    }
+
+    .texts h5 {
+        font-size: 30px;
+    }
+
+    .to-get2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 50px;
+    }
+
+    .mg1 {
+        width: 140px;
+        height: 38px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 80px;
+    }
+
+    .mg2 {
+        width: 150px;
+        height: 45px;
+        margin-top: 10px;
+        margin-left: 80px;
+        margin-bottom: 20px;
+    }
+
+    .mg3 {
+        width: 140px;
+        height: 35px;
+        margin-left: 80px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .mg4 {
+        width: 140px;
+        height: 42px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 80px;
+    }
+
+    .mg5 {
+        width: 140px;
+        height: 98px;
+        margin-left: 80px;
+        padding-bottom: 26px;
+    }
+
+    .mg6 {
+        width: 140px;
+        height: 40px;
+        margin-top: 36px;
+        margin-left: 80px;
+    }
+
+}
