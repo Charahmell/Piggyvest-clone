@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiggyVest-clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body style="background-color: #f2f7f8;">
+    <header class="header1">
+        <img src="/Media/download-removebg-preview.png" class="img-fluid pe-3">
+        <nav class="d-flex justify-content-center pt-4 mt-2">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle pt-0 border-0 fw-medium " type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" style="color: #3e5061; font-size: 18px;">
+                    Save
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="17"
+                        width="17" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
+                            d="M112 184l144 144 144-144"></path>
+                    </svg> <!-- for the dropdown arrow style-->
+                </button>
+                <div class="dropdown-menu pt-4 ps-3 list" style="width: 500px;">
+                    <div class="row">
+                        <div class="col-6 pe-4"> <!-- pe-4  to rdeuce the size of the hover conatiner-->
+                            <a class="dropdown-item d-flex mb-3" href="#">
+                                <img src="/Media/piggybank icon.png" alt="" class="m-0 p-0">
+                                <div class="ps-3 txt pt-2 l1">
+                                    <h5>Piggybank</h5>
+                                    <p>Automated Savings</p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex mb-3 " href="#">
+                                <img src="/Media/targetsaving icon.png" alt="" class=" m-0  p-0">
+                                <div class="ps-3 txt pt-2 l2">
+                                    <h5>Target Savings</h5>
+                                    <p>Goal-Oriented Savings</p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex mb-3" href="#">
+                                <img src="/Media/flexdollar icon.png" alt="" class="m-0 p-0">
+                                <div class="ps-3 txt pt-2 l3">
+                                    <h5>Flex Dollar</h5>
+                                    <p>Dollar Savings</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 pe-4">
+                            <a class="dropdown-item d-flex mb-3" href="#">
+                                <img src="/Media/safelock icon.png" alt="" class="m-0 p-0">
+                                <div class="ps-3 txt pt-2 l4">
+                                    <!-- ps-3 for space between image and texts , pt-2 to center it in its container -->
+                                    <h5>Safelock</h5>
+                                    <p>Fixed Savings</p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex mb-3" href="#">
+                                <img src="/Media/flexnaira icon.png" alt="" class="m-0 p-0">
+                                <div class="ps-3 txt pt-2 l5">
+                                    <h5>Flex Naira</h5>
+                                    <p>Flexible savings</p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex mb-3" href="#">
+                                <img src="/Media/house-icon 1.png" alt="" class="m-0 p-0">
+                                <div class="ps-3 txt pt-2 l6">
+                                    <h5>House Money</h5>
+                                    <p>Semistrict Wallet</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="ps-3 pe-4 text-decoration-none fw-medium" href="#"
+                style="color: #3e5061; font-size: 18px;">Invest</a>
+            <a class="pe-4 text-decoration-none fw-medium" href="#" style="color: #3e5061; font-size: 18px;">Stories</a>
+            <a class="pe-3 text-decoration-none fw-medium" href="#" style="color: #3e5061; font-size: 18px;">FAQs</a>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle pt-0 border-0 fw-medium" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" style="color: #3e5061; font-size: 18px;">
+                    Resources
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="17"
+                        width="17" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
+                            d="M112 184l144 144 144-144"></path>
+                    </svg>
+
+                </button>
+                <div class="dropdown-menu pt-3 ps-4 list2" style="width: 450px;">
+                    <div class="row py-4">
+                        <div class="col-6 pe-4">
+                            <a class="dropdown-item d-flex mb-4" href="#">
+                                <img src="/Media/blog icon.svg" alt="" class="m-0 p-0">
+                                <p class="ps-4 pt-2">Blog</p>
+                            </a>
+                            <a class="dropdown-item d-flex mb-4" href="#">
+                                <img src="/Media/comic icon.svg" alt="" class="m-0 p-0">
+                                <p class="ps-4 pt-2">Comics</p>
+                            </a>
+                            <a class="dropdown-item d-flex mb-2" href="#">
+                                <img src="/Media/newsletter icon.svg" alt="" class="m-0 p-0">
+                                <p class="ps-4 pt-2">Newsletter</p>
+                            </a>
+                        </div>
+                        <div class="col-6 pe-4">
+                            <a class="dropdown-item d-flex mb-4" href="#">
+                                <img src="/Media/report icon.svg" alt="" class="m-0 p-0">
+                                <p class="ps-4 pt-2">Reports</p>
+                            </a>
+                            <a class="dropdown-item d-flex mb-4" href="#">
+                                <img src="/Media/calculator icon.svg" alt="" class="m-0 p-0">
+                                <p class="ps-4 pt-2">Calculator</p>
+                            </a>
+                            <a class="dropdown-item d-flex mb-2" href="#">
+                                <img src="/Media/ebook icon.svg" alt="" class="m-0 p-0">
+                                <p class="ps-4 pt-2">Ebook</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class=" d-flex justify-content-end ms-auto header-buttons">
+            <div class="ms-auto justify-content-end ">
+                <button type="button" class="signup bg-transparent fw-medium">Sign in</button>
+                <button type="button" class="createAcc fw-medium">Create free account</button>
+                <!-- </div> -->
+            </div>
+    </header>
+    <header class="header2">
+        <div class="d-flex justify-content-between mx-4 content">
+            <img src="/Media/download-removebg-preview.png" class="h2_logo">
+
+            <button class="navbar-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu"
+                aria-expanded="false" style="height: 70px;">
+                <img src="/Media/list.svg" alt="" class="icon-open" style="width: 50px;">
+                <img src="/Media/close.svg" alt="" style="width: 65px;" class="icon-close">
+            </button>
+        </div>
+        <div class="collapse" id="mobileMenu">
+            <nav class="mobilelinks">
+                <ul>
+                    <li><a href="">Save <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                viewBox="0 0 512 512" height="17" width="17" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
+                                    d="M112 184l144 144 144-144"></path>
+                            </svg></a></li>
+                    <li><a href="">Invest</a></li>
+                    <li><a href="">Stories</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <!-- <li><a href="">Resources <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="17"
+                        width="17" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
+                            d="M112 184l144 144 144-144"></path>
+                    </svg></a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero d-flex justify-content-between">
+        <div class="hero-1">
+            <button class="reports-button">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="flower"
+                        d="M32 15.9904C31.9832 13.4471 29.9905 11.3781 27.4809 11.2432C28.2923 10.3396 28.7026 9.20001 28.7026 8.05704C28.6902 6.8455 28.2373 5.60924 27.3078 4.6798C25.4973 2.89285 22.6258 2.8389 20.7557 4.51909C20.6905 3.30643 20.1746 2.21066 19.3666 1.40147C18.5012 0.552945 17.3065 0 15.9916 0C13.4483 0.0168581 11.3792 2.00948 11.2443 4.51909C10.3407 3.70765 9.20115 3.29744 8.05817 3.29744C6.84663 3.3098 5.61037 3.76272 4.6798 4.69216C2.89285 6.50272 2.83891 9.37421 4.5191 11.2443C2.00949 11.3792 0.0168581 13.4471 0 15.9916C0 17.3065 0.554079 18.5012 1.40148 19.3666C2.20954 20.1746 3.30644 20.6905 4.5191 20.7557C2.84003 22.6258 2.89285 25.4973 4.6798 27.3078C5.61037 28.2384 6.84551 28.6913 8.05704 28.7026C9.20002 28.7026 10.3396 28.2912 11.2432 27.4809C11.3781 29.9905 13.446 31.9831 15.9905 32C17.3054 32 18.5001 31.4459 19.3654 30.5985C20.1735 29.7905 20.6894 28.6936 20.7545 27.4809C22.6247 29.1611 25.4962 29.1072 27.3067 27.3202C28.2373 26.3896 28.6902 25.1545 28.7014 23.943C28.7014 22.8 28.2901 21.6604 27.4798 20.7568C28.6924 20.6916 29.7893 20.1757 30.5974 19.3677C31.4459 18.5023 31.9989 17.3076 31.9989 15.9927L32 15.9904Z"
+                        fill="#FFE201"></path>
+                    <g class="book-icon">
+                        <path fill-rule="evenodd" clip-rule="evenodd" class="flo1"
+                            d="M20.6667 11.3335C20.6667 10.9653 20.3682 10.6668 20 10.6668L12 10.6668C11.6318 10.6668 11.3333 10.9653 11.3333 11.3335L11.3333 20.6668C11.3333 21.035 11.6318 21.3335 12 21.3335L20 21.3335C20.3682 21.3335 20.6667 21.035 20.6667 20.6668L20.6667 11.3335ZM20 9.3335C21.1046 9.3335 22 10.2289 22 11.3335L22 20.6668C22 21.7714 21.1046 22.6668 20 22.6668L12 22.6668C10.8954 22.6668 10 21.7714 10 20.6668L10 11.3335C10 10.2289 10.8954 9.3335 12 9.3335L20 9.3335Z"
+                            fill="black"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" class="flo1"
+                            d="M12 14.0002C12 13.632 12.2985 13.3335 12.6667 13.3335H19.3333C19.7015 13.3335 20 13.632 20 14.0002C20 14.3684 19.7015 14.6668 19.3333 14.6668H12.6667C12.2985 14.6668 12 14.3684 12 14.0002Z"
+                            fill="black"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" class="flo1"
+                            d="M12 12.0002C12 11.632 12.2985 11.3335 12.6667 11.3335H15.3333C15.7015 11.3335 16 11.632 16 12.0002C16 12.3684 15.7015 12.6668 15.3333 12.6668H12.6667C12.2985 12.6668 12 12.3684 12 12.0002Z"
+                            fill="black"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" class="flo1"
+                            d="M18 19.3332C18.3682 19.3332 18.6667 19.0347 18.6667 18.6665V17.3332C18.6667 16.965 18.3682 16.6665 18 16.6665H14C13.6318 16.6665 13.3333 16.965 13.3333 17.3332V18.6665C13.3333 19.0347 13.6318 19.3332 14 19.3332H18ZM20 18.6665C20 19.7711 19.1046 20.6665 18 20.6665H14C12.8954 20.6665 12 19.7711 12 18.6665V17.3332C12 16.2286 12.8954 15.3332 14 15.3332H18C19.1046 15.3332 20 16.2286 20 17.3332V18.6665Z"
+                            fill="black"></path>
+                    </g>
+                </svg>
+                <span>The 2024 piggyvest Savings report</span>
+                <svg class="arrowthing" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                    height="17" width="17" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
+                        d="M112 184l144 144 144-144"></path>
+                </svg>
+            </button>
+            <div class="hero-txt">
+                <h1>The Better Way to Save & Invest</h1>
+                <p class="mt-4">Piggyvest helps over 6 million
+                    customers
+                    achieve their financial goals by helping
+                    them save and invest with ease.
+                </p>
+            </div>
+            <div class="to-get">
+                <button class="mt-2 btn1">
+                    <img src="/Media/whiteAppleLogo.svg" alt="download-apple" width="18" height="22">
+                    Get on iphone
+                </button>
+                <button class="btn1 b2">
+                    <img src="/Media/google-icon.svg" alt="download-google" width="24" height="24">
+                    Get on Android</button>
+            </div>
+        </div>
+        <div class="position-relative Woman">
+            <img class="woman-img main" src="/Media/Woman bg image.avif" alt="" style="max-width: 500px; width: 100%;" >
+            <img class="woman-img" id="f1" src="/Media/Frame targetsavings.png" alt="">
+            <img class="woman-img" id="f2" src="/Media/Frame safelock.png" alt="">
+            <img class="woman-img" id="f3" src="/Media/Frame flexnaira.png" alt="">
+            <img class="woman-img" id="f4" src="/Media/Frame investify.png" alt="">
+            <img class="woman-img" id="f5" src="/Media/Frame piggybank.png" alt="">
+            <img class="woman-img" id="f6" src="/Media/Frame housemoney.png" alt="">
+        </div>
+    </div>
+    <div class=" section2 d-flex py-5">
+        <img src="/Media/securitylock.svg" alt="">
+        <div class="ms-lg-4 section2-txt">
+            <h3>Your security is our priority</h3>
+            <p>PiggyVest uses the highest level of Internet Security and it is
+                secured by
+                256 bits SSL security
+                encryption
+                to ensure that your information is completely protected from fraud.
+            </p>
+            <div class="security">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="mb-3">
+                    <path d="M15 10L20 15L15 20" stroke="#122231" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    <path d="M4 4V11C4 12.0609 4.42143 13.0783 5.17157 13.8284C5.92172 14.5786 6.93913 15 8 15H20"
+                        stroke="#122231" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <a href="" class="hover-underline" style="color: black;">More on our security measures</a>
+            </div>
+        </div>
+    </div>
+    <div class="section3">
+        <div class="title">
+            <h1>Many ways to build your savings</h1>
+            <p>Earn 12%–20% interest per annum when you save with any of these Piggyvest plans.
+            </p>
+        </div>
+        <div class="flex-container d-flex flex-wrap gap-4">
+            <div class="box box0">
+                <div class="ps-4 pt-5 texts">
+                    <h5 class="">Automated Savings</h5>
+                    <p class="">Build a dedicated savings faster on your terms, automatically or manually.</p>
+                </div>
+                <div class="svgthing thing0">
+                    <svg class="me-3 thing" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 10L20 15L15 20" stroke="" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path d="M4 4V11C4 12.0609 4.42143 13.0783 5.17157 13.8284C5.92172 14.5786 6.93913 15 8 15H20"
+                            stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <p> <span class="hover-underline">Piggybank </span></p>
+                </div>
+                <img src="/Media/piggybank phone.png" alt="" style="margin-top: -36px;">
+
+            </div>
+            <div class="box box1">
+                <div class="ps-4 pt-5 texts">
+                    <h5>Fixed Savings</h5>
+                    <p>Lock money away for a fixed duration without having access to it until maturity. </p>
+                </div>
+                <div class="svgthing thing1">
+                    <svg class="me-3 thing" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 10L20 15L15 20" stroke="" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path d="M4 4V11C4 12.0609 4.42143 13.0783 5.17157 13.8284C5.92172 14.5786 6.93913 15 8 15H20"
+                            stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                        <p> <span class="hover-underline">Safelock </span></p>
+                </div>
+                <img src="/Media/safelock phone.png" alt="" style="margin-top: -36px;">
+            </div>
+            <div class="box box2">
+                <div class="ps-4 pt-5 texts">
+                    <h5>Goal-Oriented Savings</h5>
+                    <p>Save towards multiple goals on your own or with a group.</p>
+                </div>
+                <div class="svgthing thing2" style=" transform: translateY(210px);">
+                    <svg class="me-3 thing" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 10L20 15L15 20" stroke="" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path d="M4 4V11C4 12.0609 4.42143 13.0783 5.17157 13.8284C5.92172 14.5786 6.93913 15 8 15H20"
+                            stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <p><span class="hover-underline">Target Savings </span></p>
+                </div>
+                <img src="/Media/goal-oriented phone.avif" alt="" style="margin-top:-9px;">
+            </div>
+            <div class="box box3">
+                <div class="ps-4 pt-5 texts">
+                    <h5>Emergency Savings</h5>
+                    <p>Save, transfer, manage, organise and withdraw yourmoney at any time.</p>
+                </div>
+                <div class="svgthing thing3">
+                    <svg class="me-3 thing" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 10L20 15L15 20" stroke="" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path d="M4 4V11C4 12.0609 4.42143 13.0783 5.17157 13.8284C5.92172 14.5786 6.93913 15 8 15H20"
+                            stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <p><span class="hover-underline">Flex Naira </span></p>
+                </div>
+                <img src="/Media/flex-naira phone.avif" alt="" style="margin-top: -35px;">
+            </div>
+            <div class="box box4">
+                <div class="ps-4 pt-5 texts">
+                    <h5>Dollar Savings</h5>
+                    <p>Save and grow your money in dollars.</p>
+                </div>
+
+                <div class="svgthing thing4" style=" transform: translateY(210px);">
+                    <svg class="me-3 thing" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 10L20 15L15 20" stroke="" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path d="M4 4V11C4 12.0609 4.42143 13.0783 5.17157 13.8284C5.92172 14.5786 6.93913 15 8 15H20"
+                            stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <p> <span class="hover-underline">Flex Dollar </span></p>
+                </div>
+                <img src="/Media/flex-dollar phone.png" alt="" style="margin-top: -7px;">
+            </div>
+            <div class="box box5">
+                <div class="ps-4 pt-5 texts">
+                    <h5>HouseMoney</h5>
+                    <p>Plan for your rent and household expenses.</p>
+                </div>
+                <div class="svgthing thing5" style=" transform: translateY(210px);">
+                    <svg class="me-3 thing" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 10L20 15L15 20" stroke="" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path d="M4 4V11C4 12.0609 4.42143 13.0783 5.17157 13.8284C5.92172 14.5786 6.93913 15 8 15H20"
+                            stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+
+                    <p><span class="hover-underline">House Money</span></p>
+                </div>
+                <img src="/Media/house-money phone.png" alt="" style="margin-top: -6px;">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section4">
+        <div class="title2">
+            <h1>Diverse ways to Invest</h1>
+            <p>Grow your money and invest for your future confidently.</p>
+        </div>
+        <div class="bluebox d-flex">
+            <div class="bluebox-txt">
+                <h3>Earn Up to 35% returns</h3>
+                <p>Invest securely and confidently on the go. Grow your money confidently by investing in pre-vetted
+                    investment opportunities.</p>
+            </div>
+            <img src="/Media/myinvestments phone.avif" alt="">
+        </div>
+    </div>
+    <div class="section5">
+        <div class="title3">
+            <h1>Meet Our Saver of the Month</h1>
+            <p>Every month, we shine a spotlight on one saver, asking them about their<br>savings culture and how
+                Piggyvest
+                has helped them.</p>
+        </div>
+        <iframe width="791" height="445" src="https://www.youtube.com/embed/UZJa8KRraio?autoplay=1&mute=1"
+            title="Temitope and Her Mother’s Journey | Piggyvest Cares" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
+    </div>
+    <div class="section6 d-flex ">
+        <div class="made-phone ">
+            <div class="scrolll">
+                <div class="box-pointer">
+                    <small>Saturday, 27th of January 2024 by 00:51 AM</small>
+                    <div class="p1 ezinne">
+                        <img src="/Media/img1.jpeg" alt="">
+                        <div class="lwords">
+                            <h6>Ezinne B</h6>
+                            <p>Hi lovelies, my name is Ezinne, I came to know about piggy vest from a very close friend
+                                of
+                                mine, whom I narrated how am not able to save up money to build my business and also
+                                invest,
+                                so she advised me to try using Piggyvest, at first I was scared, but I took a bold step
+                                one
+                                faithful day, that was the best decision I made for myself, after downloading it from
+                                play
+                                store, I registered, that was how I said bye-bye to having nothing to show at the end of
+                                every year, I joined several saving groups, I became conscious of how I spend money.h I
+                                enrolled for My BSC in an open university, Do you know that before the time to pay my
+                                school
+                                fees, I had already saved up for that, all thanks to Piggyvest. I created a saving
+                                target,
+                                named Save more than you spend. This is the mentality I gained from my 3years of using
+                                this
+                                saving platform, you can achieve whatever you set your mind to do, and work towards it.
+                                I am
+                                glad to announce that piggy vest is one of my secrets to poverty libration.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-pointer">
+                    <small>Tuesday, 23rd of January 2024 by 22:00 PM</small>
+                    <div class="p1">
+                        <img src="/Media/img2.jpeg" alt="">
+                        <!-- </div> -->
+                        <div class="lwords">
+                            <h6>Faousiyah A</h6>
+                            <p>They help me to have extra savings apart from my bank account and it's easy and trusted
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-pointer">
+                    <small>Tuesday, 2nd of January 2024 by 00:20 AM</small>
+                    <div class="p1">
+                        <img src="/Media/img3.jpeg" alt="">
+                        <div class="lwords">
+                            <h6>Christianah I</h6>
+                            <p>I saw the Piggyvest advertisement on BBNaija show 2022 and checked the website. I was
+                                looking
+                                for someone to save me from constant ATM withdrawals because it was like one straw was
+                                sucking up money from my savings account.
+
+                                Piggyvest has really helped me in the cause of my business, it has been amazing saving
+                                my
+                                money with them, especially the Piggy Bank. I encourage you all to give them a trial by
+                                investing your money today, you will thank me later. I am a living testimony, no scam
+                                here!
+                                A big thank you to the amazing people behind it.
+
+                                I saved a paltry sum to check if it was true, changed my free withdrawal day to take my
+                                money back and since then I stuck to saving. I tried the safelock in September and I'm
+                                gearing up to use it for its purpose soon. Honestly, words can barely express my joy at
+                                finding this life-saving platform that has helped reduce my compulsive spending. Thanks
+                                to
+                                #PIGGYVEST #TEAM AND CO.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-pointer">
+                    <small>Friday, 22nd of December 2023 by 03:23 AM</small>
+                    <div class="p1">
+                        <img src="/Media/img4.jpeg" alt="">
+                        <div class="lwords">
+                            <h6>Ogbonna M</h6>
+                            <p>Piggy vest has helped me learn how to save money and they also give an interest per annum
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-pointer">
+                    <small>Saturday, 27th of January 2024 by 00:51 AM</small>
+                    <div class="p1 ezinne">
+                        <img src="/Media/img1.jpeg" alt="">
+                        <div class="lwords">
+                            <h6>Ezinne B</h6>
+                            <p>Hi lovelies, my name is Ezinne, I came to know about piggy vest from a very close friend
+                                of
+                                mine, whom I narrated how am not able to save up money to build my business and also
+                                invest,
+                                so she advised me to try using Piggyvest, at first I was scared, but I took a bold step
+                                one
+                                faithful day, that was the best decision I made for myself, after downloading it from
+                                play
+                                store, I registered, that was how I said bye-bye to having nothing to show at the end of
+                                every year, I joined several saving groups, I became conscious of how I spend money.h I
+                                enrolled for My BSC in an open university, Do you know that before the time to pay my
+                                school
+                                fees, I had already saved up for that, all thanks to Piggyvest. I created a saving
+                                target,
+                                named Save more than you spend. This is the mentality I gained from my 3years of using
+                                this
+                                saving platform, you can achieve whatever you set your mind to do, and work towards it.
+                                I am
+                                glad to announce that piggy vest is one of my secrets to poverty libration.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-pointer">
+                    <small>Tuesday, 23rd of January 2024 by 22:00 PM</small>
+                    <div class="p1">
+                        <img src="/Media/img2.jpeg" alt="">
+                        <!-- </div> -->
+                        <div class="lwords">
+                            <h6>Faousiyah A</h6>
+                            <p>They help me to have extra savings apart from my bank account and it's easy and trusted
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-pointer">
+                    <small>Tuesday, 2nd of January 2024 by 00:20 AM</small>
+                    <div class="p1">
+                        <img src="/Media/img3.jpeg" alt="">
+                        <div class="lwords">
+                            <h6>Christianah I</h6>
+                            <p>I saw the Piggyvest advertisement on BBNaija show 2022 and checked the website. I was
+                                looking
+                                for someone to save me from constant ATM withdrawals because it was like one straw was
+                                sucking up money from my savings account.
+
+                                Piggyvest has really helped me in the cause of my business, it has been amazing saving
+                                my
+                                money with them, especially the Piggy Bank. I encourage you all to give them a trial by
+                                investing your money today, you will thank me later. I am a living testimony, no scam
+                                here!
+                                A big thank you to the amazing people behind it.
+
+                                I saved a paltry sum to check if it was true, changed my free withdrawal day to take my
+                                money back and since then I stuck to saving. I tried the safelock in September and I'm
+                                gearing up to use it for its purpose soon. Honestly, words can barely express my joy at
+                                finding this life-saving platform that has helped reduce my compulsive spending. Thanks
+                                to
+                                #PIGGYVEST #TEAM AND CO.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-pointer">
+                    <small>Friday, 22nd of December 2023 by 03:23 AM</small>
+                    <div class="p1">
+                        <img src="/Media/img4.jpeg" alt="">
+                        <div class="lwords">
+                            <h6>Ogbonna M</h6>
+                            <p>Piggy vest has helped me learn how to save money and they also give an interest per annum
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="other">
+            <div class="stacked d-flex">
+                <img src="/Media/img1.jpeg" alt="">
+                <img src="/Media/img2.jpeg" alt="">
+                <img src="/Media/img3.jpeg" alt="">
+                <img src="/Media/img4.jpeg" alt="">
+                <p class="FDF">5M+</p>
+            </div>
+            <h4>Join 5+ million people who save and invest with us</h4>
+            <div class="to-get2">
+                <button class="bg-transparent btn2">
+                    <img src="/Media/apple-icon black.svg" alt="download-apple" width="18" height="22">
+                    Get on iphone
+                </button>
+                <button class="bg-transparent btn2">
+                    <img src="/Media/google-icon.svg" alt="download-google" width="24" height="24">
+                    Get on Android</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="section7 d-flex justify-content-center pb-5">
+        <h4>As featured in</h4>
+        <div class="features d-flex pt-4">
+            <img src="/Media/tclogo@2x.png" alt="" class="mg1">
+            <img src="/Media/cnbc.png" alt="" class="mg2">
+            <img src="/Media/techcrunch.png" alt="" class="mg3">
+            <img src="/Media/pym-removebg-preview.svg" alt="" class="mg4">
+            <img src="/Media/fast.svg" alt="" class="mg5">
+            <img src="/Media/cio.svg" alt="" class="mg6">
+        </div>
+    </div>
+    <footer>
+        <div class="section8" style="margin-left: 50px;">
+            <div>
+                <img src="/Media/ppiggyvest grey.svg" alt="" width="172" height="32">
+                <img src="/Media/compliance-378fe121550ceac55d0eeb8c5edac2e7.avif" alt="" width="130"
+                    style="display: block;">
+            </div>
+            <div class="d-flex bbb">
+                <div>
+                    <ul>
+                        <p style="color: black;">products</p>
+                        <li><a href="">Piggybank</a> </li>
+                        <li><a href="">Invest</a></li>
+                        <li><a href="">Safelock</a></li>
+                        <li><a href="">Target Savings</a></li>
+                        <li><a href="">Flex Dollar</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <p style="color: black;">Companies</p>
+                        <li><a href="">About</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <p style="color: black;">Legal</p>
+                        <li><a href="">Terms</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="addy " style="text-align: right; margin-right: 30px;">
+                <div class="socials pb-2">
+                    <img src="/Media/f.svg" alt="" class="img1">
+                    <img src="Media/ig.svg" alt="" style="margin-left: 12px;">
+                    <img src="/Media/x.svg" alt="" style="margin-left: 12px;">
+                    <img src="/Media/tiktok.svg" alt="" style="margin-left: 12px;">
+                    <img src="/Media/youtube.svg" alt="" style="margin-left: 12px;">
+                </div>
+                <a href="https://goo.gl/maps/NpjEYTjJuzxCUM9X7" class="addy1">Tesmot house, Abdulrahman Okene
+                    close, <br>
+                    Victoria Island, Lagos, Nigeria.</a>
+                <p><a class="text-right" href="mailto:contact@piggyvest.com">contact@piggyvest.com</a></p>
+                <p><a class="text-right" href="tel:+2347009339339">+234 700 933 9339</a></p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="about w-50" style="font-size: 11px; margin-left: 50px; padding-bottom: 80px;">
+            <p>Piggyvest (formerly piggybank.ng) is the leading online savings & investing platform in Nigeria. For over
+                9 years, our customers have saved and invested billions of Naira that they would normally be tempted to
+                spend.
+
+            </p>
+            <p>2016 - 2025 PiggyTech Global Limited - RC 1405222
+
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
